@@ -5,7 +5,7 @@ import {trailSearchLatLng} from "../trails/trail-service";
 import TrailCard from "./TrailCard";
 import {useDispatch} from "react-redux";
 import {trailSearchLatLngThunk} from "../trails/trail-thunks";
-const GOOGLE_KEY = 'AIzaSyBAuQ1rbrQNRsMNx3hNQqXskxkf6vE8F6c';
+const GOOGLE_KEY = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
 
 function Results() {
 

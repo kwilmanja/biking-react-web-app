@@ -2,7 +2,7 @@ import React, {useCallback, useRef, useState} from 'react';
 import {GoogleMap, Marker, useJsApiLoader, Autocomplete, LoadScript} from '@react-google-maps/api';
 import axios from "axios";
 import {useNavigate, useParams} from "react-router";
-const GOOGLE_KEY = 'AIzaSyBAuQ1rbrQNRsMNx3hNQqXskxkf6vE8F6c';
+const GOOGLE_KEY = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
 
 function Search() {
 
