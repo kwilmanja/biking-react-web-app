@@ -1,3 +1,4 @@
+import './App.css';
 import { BrowserRouter, Link } from "react-router-dom";
 import { Routes, Route } from "react-router";
 // import Home from "./Home";
@@ -19,7 +20,7 @@ import ProfileEdit from "./profile/ProfileEdit";
 
 function App() {
   return (
-      <div className="container-fluid">
+      <div className="app-wrapper">
         <Provider store={store}>
             <CurrentUserContext>
                 <BrowserRouter>
